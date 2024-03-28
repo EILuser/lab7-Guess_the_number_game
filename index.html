@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Угадай число</title>
+</head>
+<body>
+    <header>
+        <p class="header__text">Игра "Угадай число"</p>
+        <img class="header__image" src="images/dices.png" alt="Число">
+    </header>
+    <main>
+        <p class="main__text">Правила игры:</p>
+        <ol class="main__list">
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit</li>
+        </ol>
+        <div class="game__area">
+            <div class="part">
+                <p class="game__area__text">Загаданное число:</p>
+                <p class="random__number" id="number">?</p>
+                <button class="start__button" onclick="guessTheNumberGame()">Начать игру</button>
+            </div>
+            <div class="part">
+                <p class="game__area__text">Результат:</p>
+                <img src="images/check_mark.png" alt="Галочка" class="correct__answer" id="marker">
+            </div>
+        </div>
+    </main>
+    <footer>
+        Приятной игры!!!
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>

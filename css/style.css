@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(251,131,250,1) 0%,rgba(233,60,236,1) 100%);
+}
+
+.header__text {
+    padding-top: 25px;
+    padding-left: 300px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.header__image {
+    width: 155px;
+    height: 155px;
+}
+
+.main__text {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.main__list {
+    margin-left: 280px;
+}
+
+.game__area {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.part {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.game__area__text {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.random__number {
+    font-size: 5rem;
+    margin: 0;
+}
+
+.start__button {
+    width: 250px;
+    height: 31px;
+    margin: 26px auto;
+    cursor: pointer;
+}
+
+.correct__answer {
+    width: 170px;
+    height: 172px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0 30px 0;
+    background: linear-gradient(to bottom, rgba(251,131,250,1) 0%,rgba(233,60,236,1) 100%);
+}
