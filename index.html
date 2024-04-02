@@ -14,11 +14,11 @@
     <main>
         <p class="main__text">Правила игры:</p>
         <ol class="main__list">
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit</li>
+            <li>Загадывается число от 0 до 10 (игрок может изменить правую границу диапазона). Для начала игры нужно нажать кнопку "Начать игру".</li>
+            <li>Игроку предоставляется 5 попыток, чтобы угадать число.</li>
+            <li>После каждой попытки предоставляется информация, введенное число больше или меньше загаданного.</li>
+            <li>В случае угадывания числа игрок уведомляется о победе. Чтобы начать игру заново, нужно нажать на кнопку "Начать игру".</li>
+            <li>В случае исчерпания попыток игрок уведомляется о поражении. Попробовать отгадать число еще раз можно, нажав на кнопку "Начать игру".</li>
         </ol>
         <div class="game__area">
             <div class="part">
@@ -27,8 +27,13 @@
                 <button class="start__button" onclick="guessTheNumberGame()">Начать игру</button>
             </div>
             <div class="part">
+                <p class="game__area__text">Максимальное число:</p>
+                <input type="range" min="1" max="100" value="10" id="input_range">
+                <p class="max__number" id="max_number"></p>
+            </div>
+            <div class="part">
                 <p class="game__area__text">Результат:</p>
-                <img src="images/check_mark.png" alt="Галочка" class="correct__answer" id="marker">
+                <img src="images/question_mark.png" alt="Результат" class="result" id="marker">
             </div>
         </div>
     </main>

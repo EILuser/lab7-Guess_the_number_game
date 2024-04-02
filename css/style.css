@@ -6,13 +6,12 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background: linear-gradient(to bottom, rgba(251,131,250,1) 0%,rgba(233,60,236,1) 100%);
 }
 
 .header__text {
     padding-top: 25px;
-    padding-left: 300px;
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
@@ -30,21 +29,22 @@ header {
 }
 
 .main__list {
-    margin-left: 280px;
+    margin-left: 180px;
 }
 
 .game__area {
     text-align: center;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .part {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: space-between;
+    justify-content: space-between;
+    align-content: center;
 }
 
 .game__area__text {
@@ -64,13 +64,17 @@ header {
     cursor: pointer;
 }
 
-.correct__answer {
+.result {
     width: 170px;
     height: 172px;
 }
 
+.max__number {
+    font-size: 1.3rem;
+}
+
 footer {
     text-align: center;
-    padding: 30px 0 30px 0;
+    padding: 20px 0 20px 0;
     background: linear-gradient(to bottom, rgba(251,131,250,1) 0%,rgba(233,60,236,1) 100%);
 }
