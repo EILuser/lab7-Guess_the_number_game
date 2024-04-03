@@ -34,10 +34,10 @@ function guessTheNumberGame() {
     const randomNumber = getRandomNumber(minNumber, maxNumber);
     const userNumberOnScreen = document.getElementById("number");
     const resultMarker = document.getElementById("marker");
-    let attemptsNumber = 5;
+    let attemptsNumber = maxNumber >= 10 ? 5 * (Math.round(maxNumber / 10)) : 5;
 
     while (true) {
-        userNumber = prompt(`Введите число от ${minNumber} до ${maxNumber}`);
+        userNumber = prompt(`Введите число от ${minNumber} до ${maxNumber}. Попыток осталось: ${attemptsNumber}`);
 
         if (isExit(userNumber)) {
             return;
@@ -53,13 +53,13 @@ function guessTheNumberGame() {
                 userNumberOnScreen.textContent = `${randomNumber}`;
                 return;
             }
-            else if (userNumber > randomNumber) {
-                alert("Неверно!!! Ваше число БОЛЬШЕ загаданного");
+            else if (userNumber > randomNumber){
                 attemptsNumber--;
+                alert("Неверно!!! Ваше число БОЛЬШЕ загаданного.")
             }
             else if (userNumber < randomNumber) {
-                alert("Неверно!!! Ваше число МЕНЬШЕ загаданного");
                 attemptsNumber--;
+                alert("Неверно!!! Ваше число МЕНЬШЕ загаданного.");
             }
 
 
