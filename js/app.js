@@ -14,6 +14,10 @@ function isValid(min, max, num) {
         alert(`Некорректный ввод. По правилам игры вы должны ввести число от ${min} до ${max}. Попробуйте снова`);
         return false;
     }
+    else if (parseInt(num).toString().length < num.length) {
+        alert(`Некорректный ввод. По правилам игры вы должны ввести число от ${min} до ${max}. Попробуйте снова`);
+        return false;
+    }
 
     return true;
 }
@@ -50,7 +54,7 @@ function guessTheNumberGame() {
             if (userNumber == randomNumber) {
                 confirm('Вы выиграли!!! Если хотите сыграть еще, нажмите на кнопку "Начать игру"');
                 resultMarker.src = "images/check_mark.png";
-                userNumberOnScreen.textContent = `${randomNumber}`;
+                userNumberOnScreen.textContent = randomNumber.toString();
                 return;
             }
             else if (userNumber > randomNumber){
@@ -66,7 +70,7 @@ function guessTheNumberGame() {
             if (attemptsNumber === 0) {
                 confirm('Количество попыток исчерпано. Если хотите попробовать угадать число еще раз, нажмите на конпку "Начать игру"');
                 resultMarker.src = "images/cross.png";
-                userNumberOnScreen.textContent = `${randomNumber}`;
+                userNumberOnScreen.textContent = randomNumber.toString();
                 return;
             }
         }
